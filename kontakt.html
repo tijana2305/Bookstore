@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Knjige i Literatura</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="autori.html">Poznati autori</a></li>
+            <li><a href="saveti.html">Saveti za čitanje</a></li>
+        </ul>
+    </nav>
+
+    <!-- Heder -->
+    <header>
+        <div class="header-overlay">
+            <h1>Kontaktirajte nas</h1>
+            <p>Ukoliko imate pitanja ili želite da podelite mišljenje, slobodno nas kontaktirajte.</p>
+        </div>
+    </header>
+
+    <!-- Glavni sadržaj -->
+    <main>
+        <div class="content">
+            <h2>Pošaljite nam poruku</h2>
+            <p>Popunite formu ispod da biste nas kontaktirali. Odgovaraćemo u najkraćem mogućem roku!</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ime i Prezime</label>
+                    <input type="text" id="name" name="name" placeholder="Unesite vaše ime" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email adresa</label>
+                    <input type="email" id="email" name="email" placeholder="Unesite vašu email adresu" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Poruka</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Unesite vašu poruku" required></textarea>
+                </div>
+                <button type="submit" class="btn">Pošaljite poruku</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Futer -->
+    <footer>
+        <p>&copy; 2024 Knjige i Literatura. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>

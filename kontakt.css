@@ -1,0 +1,142 @@
+/* Globalni stilovi - centriranje teksta */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centriranje osnovnog teksta */
+    background-color: #ecf0f1; /* Svetla pozadinska boja koja se uklapa sa estetikom */
+}
+
+/* Navigacija - horizontalni raspored i priljubljena na vrh */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50; /* Tamna plava sa sivim podtonovima */
+    padding: 15px 0;
+    z-index: 1000; /* Postavljamo navigaciju iznad ostalog sadržaja */
+}
+
+nav ul {
+    list-style: none; /* Uklanja tačkice ili brojeve sa lista */
+    display: flex; /* Flexbox omogućava horizontalni raspored */
+    justify-content: center; /* Poravnava stavke na sredinu */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    padding: 5px 0;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #f39c12; /* Zlatni hover efekat */
+}
+
+/* Glavni sadržaj ispod navigacije */
+main {
+    padding: 80px 20px; /* Padding kako bi sadržaj bio ispod fiksirane navigacije */
+    background-color: #fff; /* Bela pozadina za glavni sadržaj */
+    margin-top: 60px; /* Razmak od vrha da se ne preklapa sa navigacijom */
+}
+
+.content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2980b9; /* Plava boja za naslove */
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #555; /* Siva boja za tekst */
+}
+
+/* Kontakt forma */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #34495e; /* Tamna plava boja za tekst */
+    text-align: left; /* Poravnanje labela sa leve strane */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #f39c12; /* Zlatna boja na fokus */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #2980b9; /* Elegantna plava */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3498db; /* Svetla plava pri hover-u */
+}
+
+/* Heder sa pozadinskom slikom ili svetlom bojom */
+header {
+    background-color: #f39c12; /* Zlatna boja koja se slaže sa estetikom */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.5em;
+    color: #ecf0f1; /* Svetlo siva boja za podnaslove */
+}
+
+/* Footer */
+footer {
+    background-color: #34495e; /* Tamna plava */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

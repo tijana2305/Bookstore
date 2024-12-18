@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Svetlo krem pozadina u slučaju da slika ne pokrije sve */
+    background-image: url('https://i.pinimg.com/736x/d8/45/8e/d8458e048324e7414251ba1848d6a017.jpg'); /* Slika pozadine */
+    background-size: cover; /* Slika pokriva celu pozadinu, proporcionalno skalirana */
+    background-position: center center; /* Slika je pozicionirana u centru stranice */
+    background-attachment: fixed; /* Slika ostaje fiksirana prilikom skrolovanja */
+    background-repeat: no-repeat; /* Sprečava ponavljanje slike */
+    color: #333;  /* Tamno siva boja za tekst */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+h1, h2, h3, h4, p {
+    margin-bottom: 1em;
+}
+
+/* Navigacija */
+nav {
+    background-color: #2c3e50; /* Tamna plava sa sivim podtonovima */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #f39c12; /* Zlatni hover efekat */
+}
+
+/* Heder */
+header {
+    background-color: rgba(44, 62, 80, 0.8); /* Poluprovidna tamna plava */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #f39c12; /* Zlatni naglasak na naslovu */
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ecf0f1; /* Svetlo siva za podnaslove */
+}
+
+/* Glavni sadržaj */
+main {
+    padding: 80px 20px 40px;  /* Top padding za razmak zbog fiksirane navigacije */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2980b9; /* Elegantna plava boja */
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555; /* Siva boja za tekst */
+}
+
+/* Sekcija sa knjigama */
+.knjige {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.book {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.book h4 {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #2c3e50; /* Tamna plava za naslove knjiga */
+}
+
+.book p {
+    padding: 0 15px 15px;
+    font-size: 1em;
+    color: #777; /* Siva boja za opis */
+}
+
+.book:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Sekcija sa savetima */
+.saveti {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.saveti ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.saveti li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.saveti li strong {
+    color: #2980b9; /* Plava boja za važne stavke */
+}
+
+/* Banneri */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.banner {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.banner p {
+    padding: 15px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #e67e22; /* Narandžasta pozadina */
+    text-align: center;
+}
+
+.banner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #34495e; /* Tamna plava sa sivo-plavim tonovima */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
+/* Sekcija sa autorima */
+.autori-lista {
+    margin-top: 30px;
+}
+
+.autori-lista ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0;
+}
+
+.autori-lista li {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.autori-lista li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.autori-lista img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #2980b9;
+}
+
+.autori-lista .autor-info {
+    padding: 20px;
+}
+
+.autori-lista h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.autori-lista p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.slike-container {
+    display: flex;
+    justify-content: center;  /* Centriranje slika horizontalno */
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;  /* Omogućava da se slike prelamaju u novi red ako je potrebno */
+}
+
+.slike-container .slika {
+    max-width: 50%;  /* Možete smanjiti širinu slika */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centriranje slika unutar svog kontejnera */
+}
+
+.slike-container .slika img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slike-container .slika p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #555;
+    text-align: center;  /* Centriranje teksta ispod slike */
+}
